@@ -4,6 +4,7 @@
   "description": "Emulate FormData object for some browsers",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,20 @@
   "bugs": {
     "url": "https://github.com/mattgoucher/html5-formdata/issues"
   },
-  "homepage": "https://github.com/mattgoucher/html5-formdata#readme"
+  "homepage": "https://github.com/mattgoucher/html5-formdata#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    "mocha": "^3.0.2",
+    "standard-version": "^2.4.0"
+  },
+  "dependencies": {
+    "window-or-global": "^1.0.1"
+  }
 }
